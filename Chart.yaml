@@ -1,6 +1,6 @@
 apiVersion: v2
 name: lab5-shop
-description: Troubleshooting Lab 5 - v1 (calisan surum)
+description: Troubleshooting Lab 5 - v2 (yeni surum)
 type: application
-version: 0.1.0
-appVersion: "1.0.0"
+version: 0.2.0
+appVersion: "2.0.0"
