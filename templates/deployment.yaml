@@ -5,10 +5,7 @@ metadata:
 spec:
   replicas: {{ .Values.replicaCount }}
   strategy:
-    type: RollingUpdate
-    rollingUpdate:
-      maxUnavailable: 0
-      maxSurge: 1
+    type: Recreate
   selector:
     matchLabels:
       {{- include "lab5.selector" . | nindent 6 }}
@@ -30,7 +27,7 @@ spec:
                   key: password
           readinessProbe:
             httpGet:
-              path: /
+              path: /ready
               port: 80
             initialDelaySeconds: 2
             periodSeconds: 3
