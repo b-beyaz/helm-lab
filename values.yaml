@@ -1,0 +1,6 @@
+replicaCount: 3
+
+image:
+  tag: "1.25.3"
+
+message: "Merhaba v1"
